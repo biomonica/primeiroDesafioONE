@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header class="logo">
+        <img src="assets/logoalura.png" alt="Logo da alura com letra a">
+    </header>
+    <main class="main">
+        <section class="codificador">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Digite o texto aqui"></textarea>
+            <div>
+                <h6 class="informacao">Apenas letras maiúsculas e minúsculas</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">
+                   Criptografar
+                </button>
+                
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+        
+        <section>
+            <textarea class="mensagem" cols="18" rows="8"></textarea>   
+            <button id="btnCopiar" onclick="copiarTexto()" class="botao2">Copiar Texto</button>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="copyright">&copy;Desenvolvido por Mônica Oliveira - 2022</p>
+        <div class="botao-hiperlink">
+            <a href="https://www.linkedin.com/in/biomonica/" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+            </a>            
+            
+            <a href="https://github.com/biomonica" target="_blank">
+                <img src="https://img.icons8.com/material-sharp/48/000000/github.png"/>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+
+</body>
+</html>
